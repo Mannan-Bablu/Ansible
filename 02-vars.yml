@@ -34,4 +34,11 @@
     - name: print URL1
       ansible.builtin.debug:
         msg: URL - {{URL}}
+## command lines for variables
+- name: play for inventory variables
+  hosts: all
+  tasks:
+    - name: print URL1
+      ansible.builtin.debug:
+        msg: URL - {{URL}}
 
