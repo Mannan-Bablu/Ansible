@@ -14,3 +14,17 @@
     - name: print URL
       ansible.builtin.debug:
         msg: URL - {{URL}}
+- name: play for tasks level variation
+  hosts: all
+  tasks:
+    - name: print URL1
+      ansible.builtin.debug:
+        msg: URL - {{URL}}
+      vars:
+        URL: APPLE
+    - name: print URL2
+      ansible.builtin.debug:
+        msg: URL - {{URL}}
+      vars:
+        URL: SWEETY
+
