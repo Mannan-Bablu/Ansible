@@ -46,6 +46,6 @@
   hosts: all
   tasks:
     - name: print fact
-        ansible.builtin.debug:
-          msg: hostname - {{ansible_fqdn}}
+      ansible.builtin.debug:
+        msg: hostname - {{ansible_fqdn}}
 
