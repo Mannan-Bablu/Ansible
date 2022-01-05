@@ -1,0 +1,8 @@
+- name: play for variables
+  hosts: all
+  vars:
+    URL: i hate you
+  tasks:
+    - name: print a value
+      ansible.builtin.debug:
+        msg: URL - {{URL}}
