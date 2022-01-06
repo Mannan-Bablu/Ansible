@@ -1,1 +1,1 @@
-aws ec2 request-spot-instances --instance-count 1 --type "persistant" --launch-specification file://spot.json --tag-specification "resourcetype=instances,Tags=[{Key=name,Value=frontend}]"
+aws ec2 request-spot-instances --instance-count 1 --type "persistant" --launch-specification file://spot.json --tag-specification "resourcetype=spot-instances-request,Tags=[{Key=name,Value=frontend}]"
